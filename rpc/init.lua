@@ -1,6 +1,6 @@
 local rpc = {}
 
-rpc.client = require("rpc.client")
-rpc.server = require("rpc.server")
+rpc.client = require("openrpc.client")
+rpc.server = require("openrpc.server")
 
 return rpc
