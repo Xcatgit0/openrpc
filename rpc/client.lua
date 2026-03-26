@@ -14,7 +14,7 @@ function M.createProxy(address, port)
     requestId = requestId + 1
     local id = requestId
 
-    modem.send(address, port, id, funcName, {...})
+    modem.send(address, port, id, funcName, ...)
 
     while true do
       local _, _, from, p, _, rid, ok, result =
